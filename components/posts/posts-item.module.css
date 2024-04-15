@@ -1,7 +1,10 @@
 .post {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  background-color: var(--color-grey-800);
+  border: 1px solid var(--color-grey-400);
   text-align: center;
+  border-radius: 6px;
+  margin: var(--size-4) 0;
+
+  height: 100%;
 }
 
 .post a {
@@ -26,6 +29,8 @@
 
 .content {
   padding: var(--size-4);
+
+  color: var(--color-grey-900);
 }
 
 .content h3 {
@@ -35,7 +40,7 @@
 
 .content time {
   font-style: italic;
-  color: var(--color-grey-300);
+  color: var(--color-grey-700);
 }
 
 .content p {

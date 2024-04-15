@@ -1,29 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  --color-grey-50: hsl(265, 55%, 96%);
-  --color-grey-100: hsl(265, 19%, 88%);
-  --color-grey-200: hsl(265, 7%, 70%);
-  --color-grey-300: hsl(265, 6%, 66%);
-  --color-grey-400: hsl(265, 4%, 57%);
-  --color-grey-500: hsl(265, 3%, 53%);
-  --color-grey-600: hsl(265, 4%, 42%);
-  --color-grey-700: hsl(265, 4%, 31%);
-  --color-grey-800: hsl(276, 5%, 20%);
-  --color-grey-900: hsl(280, 5%, 13%);
+  --color-grey-50: hsl(200, 60%, 96%);
+  --color-grey-100: hsl(200, 45%, 88%);
+  --color-grey-200: hsl(200, 40%, 80%);
+  --color-grey-300: hsl(200, 35%, 74%);
+  --color-grey-400: hsl(200, 30%, 68%);
+  --color-grey-500: hsl(200, 25%, 62%);
+  --color-grey-600: hsl(200, 20%, 56%);
+  --color-grey-700: hsl(200, 15%, 50%);
+  --color-grey-800: hsl(200, 10%, 44%);
+  --color-grey-900: hsl(200, 5%, 38%);
 
-  --color-primary-50: #c8b3ce;
-  --color-primary-100: #a07aaa;
-  --color-primary-200: #884c97;
-  --color-primary-300: #843897;
-  --color-primary-400: #732392;
-  --color-primary-500: #5a097a;
-  --color-primary-600: #480264;
-  --color-primary-700: #3d0264;
+  --color-primary-50: #e1ebf0;
+  --color-primary-100: #c2d8e4;
+  --color-primary-200: #a3c5d8;
+  --color-primary-300: #84b2cc;
+  --color-primary-400: #65a0c0;
+  --color-primary-500: #4790b4;
+  --color-primary-600: #36789a;
+  --color-primary-700: #255f80;
 
   --color-success-100: #a2f0bc;
   --color-success-500: #12bd4b;
@@ -43,15 +45,15 @@ body {
   --size-40: 10rem;
 
   margin: 0;
-  background-color: var(--color-grey-500);
+  /* background-color: var(--color-grey-500); */
   color: #252525;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Oswald', 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
