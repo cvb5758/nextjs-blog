@@ -29,7 +29,7 @@ export default function PostsItem(props) {
         <div className={classes.content}>
           <h3>{title}</h3>
           <time>{date}</time>
-          <p>{excerpt}</p>
+          <p>{excerpt} ...</p>
         </div>
       </Link>
     </li>
