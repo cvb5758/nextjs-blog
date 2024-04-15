@@ -9,15 +9,12 @@ export default function Hero() {
         <Image
           src="/images/site/sumin.jpg"
           alt="An image showing Sumin"
-          width={300}
-          height={300}
+          width={1000}
+          height={1000}
         />
       </div>
-      <h1>Hi, I am Sumin</h1>
-      <p>
-        I blog about web development - especially frontend frameworks like
-        Angular or React.
-      </p>
+      <h1>Sumin`s sulog</h1>
+      <p>I am FrontEnd Developer.</p>
     </section>
   );
 }

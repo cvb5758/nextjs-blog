@@ -14,11 +14,10 @@ export default function MainNavigation() {
             <Link href="/posts">Posts</Link>
           </li>
           <li className={classes.li}>
-            <Link href="/contact">Contact</Link>
+            <Link href="https://github.com/cvb5758" target="blank">
+              github
+            </Link>
           </li>
-          {/* <li>
-            <Link href="/about">About</Link>
-          </li> */}
         </ul>
       </nav>
     </header>
