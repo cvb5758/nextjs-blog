@@ -1,10 +1,7 @@
 import PostContent from '@/components/posts/post-detail/post-content';
 import { getPostDate, getPostFiles } from '@/lib/posts-utils';
-// import { useRouter } from 'next/router';
 
 export default function PostDetailPage(props) {
-  // const router = useRouter();
-
   return (
     <div>
       <PostContent post={props.post} />
