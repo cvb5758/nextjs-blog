@@ -2,15 +2,14 @@
   width: 95%;
   max-width: 60rem;
   margin: var(--size-8) auto;
-  font-size: var(--size-5);
-  line-height: var(--size-8);
-  background-color: var(--color-grey-50);
-  border-radius: 6px;
+  font-size: var(--size-4);
+  line-height: 2;
+  border: 1px solid var(--color-grey-600);
   padding: var(--size-4);
 }
 
 .content p {
-  color: var(--color-grey-700);
+  color: var(--color-grey-900);
 }
 
 .content .image {
@@ -19,8 +18,29 @@
   max-width: 600px;
 }
 
+.content pre {
+  padding: var(--size-4);
+  border-radius: 6px;
+}
+
+.content pre span {
+  white-space: pre-line;
+}
+
 @media (min-width: 768px) {
   .content {
-    padding: var(--size-8);
+    padding: var(--size-20);
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding: var(--size-20) var(--size-8);
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding: var(--size-20) var(--size-16);
   }
 }

@@ -6,12 +6,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: var(--size-8);
 }
 
 .header h1 {
   font-size: var(--size-8);
-  color: var(--color-grey-800);
+  color: var(--color-primary-700);
   margin: 0;
   line-height: initial;
   text-align: center;
@@ -19,6 +19,7 @@
 
 .header img {
   object-fit: cover;
+  margin-bottom: var(--size-4);
   /* width: 100%; */
 }
 

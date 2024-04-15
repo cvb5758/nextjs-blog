@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  padding: var(--size-8) 0;
+  padding: var(--size-20) 0;
   height: 0;
 }
 
@@ -9,9 +9,8 @@
   max-width: 20rem;
   max-height: 20rem;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 25%;
   overflow: hidden;
-  margin: 1.6rem auto;
+  margin: 3.2rem auto;
 }
 
 .image img {
@@ -24,7 +23,7 @@
 .hero h1 {
   font-size: var(--size-20);
   margin: var(--size-4) 0;
-  color: var(--color-grey-800);
+  color: var(--color-primary-500);
 }
 
 .hero p {
