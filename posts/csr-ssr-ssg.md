@@ -1,7 +1,7 @@
 ---
 title: Next.js 렌더링 방식 CSR, SSR, SSG
 image: render.jpg
-date: '2024-4-15'
+date: '20240415'
 ---
 
 Next.js는 다양한 렌더링 방식을 지원하여 개발자가 사용자 경험과 검색 엔진 최적화(SEO) 간의 최적의 균형을 찾을 수 있도록 도와준다. 이 글에서는 Next.js의 세 가지 주요 렌더링 방식인 CSR, SSR, 그리고 SSG에 대해 알아보고자 한다.
