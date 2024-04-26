@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/* @media max */
+
 body {
   --color-grey-50: hsl(200, 60%, 96%);
   --color-grey-100: hsl(200, 45%, 88%);
