@@ -8,7 +8,7 @@ Next.js는 다양한 렌더링 방식을 지원하여 개발자가 사용자 경
 
 ## CSR (Client-Side Rendering)
 
-```
+```text
 CSR은 웹 페이지의 로딩 시 서버로부터 최소한의 HTML과 JavaScript를 전달받고, 모든 렌더링은 사용자의 브라우저에서 일어나는 방식이다. 이 방식은 특히 SPA(Single Page Applications)에서 널리 사용된다.
 ```
 
@@ -24,7 +24,7 @@ CSR은 웹 페이지의 로딩 시 서버로부터 최소한의 HTML과 JavaScri
 
 ## SSR (Server-Side Rendering)
 
-```
+```text
 SSR은 각 페이지 요청마다 서버에서 HTML을 렌더링하여 전송하는 방식이다. 이는 콘텐츠가 서버에서 완성된 상태로 클라이언트에 전달되기 때문에 초기 로딩 시간을 단축할 수 있다.
 ```
 

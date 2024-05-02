@@ -6,6 +6,60 @@ module.exports = {
   ],
   theme: {
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+            color: theme('colors.warmGray.800'),
+            a: {
+              color: theme('colors.orange.500'),
+              '&:hover': {
+                color: theme('colors.orange.600'),
+              },
+            },
+            strong: {
+              color: theme('colors.warmGray.900'),
+            },
+            'ol > li::before': {
+              color: theme('colors.orange.500'),
+            },
+            'ul > li::before': {
+              backgroundColor: theme('colors.orange.500'),
+            },
+            hr: {
+              borderColor: theme('colors.warmGray.200'),
+            },
+            blockquote: {
+              color: theme('colors.warmGray.900'),
+              borderLeftColor: theme('colors.orange.500'),
+            },
+            'figure figcaption': {
+              color: theme('colors.warmGray.600'),
+            },
+            code: {
+              color: theme('colors.warmGray.900'),
+              backgroundColor: theme('colors.warmGray.100'),
+            },
+            'a code': {
+              color: theme('colors.orange.500'),
+            },
+            pre: {
+              color: theme('colors.warmGray.50'),
+              backgroundColor: theme('colors.warmGray.900'),
+            },
+            'pre code': {
+              backgroundColor: 'transparent',
+            },
+            thead: {
+              color: theme('colors.warmGray.900'),
+              borderBottomColor: theme('colors.warmGray.200'),
+            },
+            'tbody tr': {
+              borderBottomColor: theme('colors.warmGray.200'),
+            },
+          },
+        },
+      }),
       colors: {
         warmGray: {
           50: '#fafaf9',
@@ -58,5 +112,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
