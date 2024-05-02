@@ -17,12 +17,13 @@ export default function PostsItem(props) {
   return (
     <li key={slug} className={classes.post}>
       <Link href={linkPath}>
-        <div className={classes.image}>
+        <div className="p-6">
           <Image
             src={imagePath}
             alt={title}
             width={500}
             height={150}
+            className="rounded-lg"
             // layout="responsive"
           />
         </div>

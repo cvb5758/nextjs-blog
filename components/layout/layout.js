@@ -1,11 +1,10 @@
 import MainNavigation from './main-navigation';
-import classes from './layout.module.css';
 
 export default function Layout({ children }) {
   return (
-    <div className={classes.layout}>
+    <div className="min-h-screen w-full">
       <MainNavigation />
-      <main>{children}</main>
+      <main className="mt-20">{children}</main>
     </div>
   );
 }

@@ -1,20 +1,22 @@
 import Image from 'next/image';
-
-import classes from './hero.module.css';
+import Detail from './detail';
 
 export default function Hero() {
   return (
-    <section className={classes.hero}>
-      <div className={classes.image}>
+    <section
+      className="w-full mx-auto flex 
+    items-center justify-center flex-col"
+    >
+      <figure className="w-full max-w-60 max-h-60 overflow-hidden shadow-md mx-auto my-12">
         <Image
           src="/images/site/sumin.jpg"
           alt="An image showing Sumin"
           width={1000}
           height={1000}
+          className="shadow-lg rounded-md"
         />
-      </div>
-      <h1>Sumin`s sulog</h1>
-      <p>I am FrontEnd Developer.</p>
+      </figure>
+      {/* <Detail /> */}
     </section>
   );
 }

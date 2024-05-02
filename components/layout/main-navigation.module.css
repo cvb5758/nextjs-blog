@@ -43,7 +43,7 @@
 .header a:active {
   color: var(--color-grey-200);
 }
-
+/* 
 @media (min-width: 768px) {
   .header ul {
     gap: 0.5rem;
@@ -52,4 +52,4 @@
   .header a {
     font-size: var(--size-5);
   }
-}
+} */
