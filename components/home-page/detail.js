@@ -43,6 +43,16 @@ export default function Detail() {
           </Link>
         </div> */}
       </section>
+      <section className="w-full m-24 p-4 flex flex-col items-center justify-center">
+        <div
+          className="
+        bg-orange-200 w-full text-center rounded-lg p-16 border-4 border-red-400"
+        >
+          <span className="text-4xl font-bold text-red-900">
+            공사 중입니다!
+          </span>
+        </div>
+      </section>
     </article>
   );
 }
