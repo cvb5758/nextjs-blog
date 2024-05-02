@@ -1,5 +1,4 @@
 import PostHeader from './post-header';
-import classes from './post-content.module.css';
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -24,7 +23,7 @@ export default function PostContent(props) {
         const image = node.children[0];
 
         return (
-          <div className={classes.image}>
+          <div className="mx-auto w-full max-w-[600px] my-4">
             <Image
               src={`${image.properties.src}`}
               alt={image.properties.alt}
@@ -51,9 +50,11 @@ export default function PostContent(props) {
   };
 
   return (
-    <article className={classes.content}>
+    <article className="mx-auto w-11/12 max-w-4xl my-8 p-4 font-medium leading-loose border border-gray-400 shadow-sm md:p-8 lg:p-8 xl:p-8">
       <PostHeader title={post.title} image={imagePath} />
-      <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
+      <ReactMarkdown className="prose" components={customRenderers}>
+        {post.content}
+      </ReactMarkdown>
     </article>
   );
 }
