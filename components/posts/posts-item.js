@@ -22,12 +22,12 @@ export default function PostsItem(props) {
             alt={title}
             width={320}
             height={320}
-            className="rounded-md"
+            className="rounded-md h-40 shadow-md transition duration-300 ease-in-out transform hover:scale-110"
             placeholder={blurDataURL}
           />
 
           <div className="flex flex-col justify-end items-start text-gray-700">
-            <h className="mt-4">{title}</h>
+            <h className="text-xl font-bold">{title}</h>
             <time
               className="
             text-gray-500 font-semibold text-sm mt-2"
