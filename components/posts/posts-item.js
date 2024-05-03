@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function PostsItem(props) {
-  const { title, image, excerpt, date, slug } = props.post;
+  const { title, image, excerpt, date, slug, blurDataURL } = props.post;
 
   const formmatDate = new Date(date).toLocaleDateString('ko-KR', {
     day: 'numeric',
@@ -24,7 +24,7 @@ export default function PostsItem(props) {
             height={320}
             className="rounded-md"
             layout="responsive"
-            placeholder="blur"
+            placeholder={blurDataURL}
           />
         </div>
         <div className="flex flex-col justify-end items-start text-gray-700">
