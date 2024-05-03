@@ -12,8 +12,8 @@ export default function Hero() {
         <Image
           src="/images/site/sumin.jpg"
           alt="An image showing Sumin"
-          width={1000}
-          height={1000}
+          width={400}
+          height={400}
           className="shadow-lg rounded-md"
         />
       </figure>

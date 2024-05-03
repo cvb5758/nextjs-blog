@@ -20,10 +20,11 @@ export default function PostsItem(props) {
           <Image
             src={imagePath}
             alt={title}
-            width={500}
-            height={150}
+            width={320}
+            height={320}
             className="rounded-md"
             layout="responsive"
+            placeholder="blur"
           />
         </div>
         <div className="flex flex-col justify-end items-start text-gray-700">
