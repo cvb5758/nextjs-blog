@@ -1,8 +1,12 @@
 import Link from 'next/link';
 
 export default function Detail() {
+  let isMounted = true;
   return (
     <article
+      className={`max-w-[40rem] mx-auto p-2 flex flex-col items-center justify-center ${
+        isMounted ? 'animate-slideIn' : ''
+      }`}
     >
       <section className="w-full mx-8 p-4">
         <div className="bg-orange-200 w-full text-center rounded-lg">
