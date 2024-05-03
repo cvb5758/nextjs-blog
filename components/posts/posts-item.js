@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import classes from './posts-item.module.css';
 
 export default function PostsItem(props) {
   const { title, image, excerpt, date, slug } = props.post;
@@ -15,22 +14,27 @@ export default function PostsItem(props) {
   const linkPath = `/posts/${slug}`;
 
   return (
-    <li key={slug} className={classes.post}>
+    <li key={slug} className="border border-gray-400 rounded-md p-4">
       <Link href={linkPath}>
-        <div className="p-6">
+        <div>
           <Image
             src={imagePath}
             alt={title}
             width={500}
             height={150}
-            className="rounded-lg"
-            // layout="responsive"
+            className="rounded-md"
+            layout="responsive"
           />
         </div>
-        <div className={classes.content}>
-          <h3>{title}</h3>
-          <time>{date}</time>
-          <p>{excerpt} ...</p>
+        <div className="flex flex-col justify-end items-start text-gray-700">
+          <h className="mt-4">{title}</h>
+          <time
+            className="
+            text-gray-500 font-semibold text-sm mt-2"
+          >
+            {date}
+          </time>
+          <p className="mt-4 text-gray-600 text-sm">{excerpt} ...</p>
         </div>
       </Link>
     </li>
