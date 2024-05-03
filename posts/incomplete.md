@@ -1,6 +1,6 @@
 ---
 title: 실패가 아닌 미완성
-image: 미완성.jpg
+image: incomplete.jpg
 date: '20240427'
 ---
 
