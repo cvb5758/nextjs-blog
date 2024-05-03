@@ -2,7 +2,8 @@ import Link from 'next/link';
 
 export default function Detail() {
   return (
-    <article className="w-1/4 mx-auto p-2 flex flex-col items-center justify-center">
+    <article
+    >
       <section className="w-full mx-8 p-4">
         <div className="bg-orange-200 w-full text-center rounded-lg">
           <span className="block p-4 text-gray-800">
@@ -31,17 +32,6 @@ export default function Detail() {
           사용자에게 필요한 정보를 제공하는 것을 목표로 합니다. 또한, 사용하는
           기술 스택에 대해 꾸준히 공부하고, 새로운 기술을 배우는 것을 즐깁니다.
         </p>
-        {/* <div className="w-full flex items-center justify-center gap-4 mt-4">
-          <Link
-            href="/portfolio"
-            className="text-gray-800 hover:text-gray-800 bg-gray-400 p-4 rounded-lg"
-          >
-            나의 포트폴리오
-            <span className="transition-all duration-300 transform hover:translate-x-2 ml-2">
-              &gt;
-            </span>
-          </Link>
-        </div> */}
       </section>
       <section className="w-full m-24 p-4 flex flex-col items-center justify-center">
         <div
