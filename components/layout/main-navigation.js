@@ -14,6 +14,18 @@ export default function MainNavigation() {
             <Logo />
           </Link>
 
+          <Link
+            href="/posts"
+            className="p-1 border-b-2 border-gray-500 hover:border-amber-800 transition-colors duration-300 ease-in-out"
+          >
+            Posts
+          </Link>
+          <Link
+            href="/portfolio"
+            className="p-1 border-b-2 border-gray-500 hover:border-amber-800 transition-colors duration-300 ease-in-out"
+          >
+            Projects
+          </Link>
         </div>
         <div className="mr-8">
           <Link
