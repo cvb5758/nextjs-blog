@@ -24,15 +24,59 @@ date: '20240416'
 다음은 _**useState()**_ 가 어떻게 구현될 수 있는지에 대한 간단한 예:
 
 ```js
-function useState(initialValue) {
-  let [state, setState] = [initialValue, (newVal) => (state = newVal)];
-  return [state, setState];
+let state = [];
+let setters = [];
+let firstRun = true;
+let cursor = 0;
+
+function createSetter(cursor) {
+  return function setterWithCursor(newVal) {
+    state[cursor] = newVal;
+  };
+}
+
+// useState 구현 코드
+export function useState(initVal) {
+  if (firstRun) {
+    state.push(initVal);
+    setters.push(createSetter(cursor));
+    firstRun = false;
+  }
+
+  const setter = setters[cursor];
+  const value = state[cursor];
+
+  cursor++;
+  return [value, setter];
+}
+
+// react hooks를 사용하는 컴포넌트 코드
+function RenderFunctionComponent() {
+  const [firstName, setFirstName] = useState('Rudi'); // cursor: 0
+  const [lastName, setLastName] = useState('Yardley'); // cursor: 1
+
+  return (
+    <div>
+      <Button onClick={() => setFirstName('Richard')}>Richard</Button>
+      <Button onClick={() => setFirstName('Fred')}>Fred</Button>
+    </div>
+  );
 }
 
 function MyComponent() {
-  const [name, setName] = useState('React');
-  return <button onClick={() => setName('Hooks')}>{name}</button>;
+  cursor = 0; // cursor 재설정
+  return <RenderFunctionComponent />; // render
 }
+
+console.log(state); // 렌더링 전 : []
+MyComponent();
+console.log(state); // 첫 렌더링 후 : ['Rudi', 'Yardley']
+MyComponent();
+console.log(state); // 후속 렌더링 : ['Rudi', 'Yardley']
+
+// 'Fred' 버튼 클릭
+
+console.log(state); // 버튼 클릭 후 : ['Fred', 'Yardley']
 ```
 
 이 컴포넌트는 버튼이 "React"에서 "Hooks"로 레이블을 업데이트하는 방법을 보여준다.
