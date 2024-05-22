@@ -16,8 +16,7 @@ export default function PostsItem(props) {
   return (
     <li
       key={slug}
-      className="border border-gray-400 rounded-md p-4 transition duration-300 ease-in-out transform hover:scale-105
-      shadow-md hover:shadow-lg hover:border-gray-500
+      className="border border-gray-400 rounded-md p-4 transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg hover:border-gray-500 w-[20rem] mx-auto
       "
     >
       <Link href={linkPath}>
